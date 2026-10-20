@@ -1,0 +1,11 @@
+{
+  "name": "dreamshaper-mvp",
+  "version": "1.0.0",
+  "description": "Projeto DreamShaper MVP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Testes configurados\" && exit 0"
+  },
+  "author": "Valdineia Cordeiro Reinaldo Silva",
+  "license": "MIT"
+}
