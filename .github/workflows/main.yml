@@ -1,0 +1,24 @@
+name: Testes e Cobertura
+on:
+  push:
+    branches: [ main, principal ]
+  pull_request:
+    branches: [ main, principal ]
+
+jobs:
+  cobertura:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Executar testes e calcular cobertura
+        run: npm test -- --coverage
