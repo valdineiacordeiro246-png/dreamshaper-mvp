@@ -1,9 +1,9 @@
 name: Testes e Cobertura
 on:
   push:
-    branches: [ main, principal ]
+    branches: [ principal ]
   pull_request:
-    branches: [ main, principal ]
+    branches: [ principal ]
 
 jobs:
   cobertura:
@@ -20,5 +20,5 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Executar testes e calcular cobertura
-        run: npm test -- --coverage
+      - name: Executar testes
+        run: npm test
