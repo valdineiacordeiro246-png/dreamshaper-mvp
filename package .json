@@ -4,7 +4,7 @@
   "description": "Projeto DreamShaper MVP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Testes configurados\" && exit 0"
+    "test": "echo \"Testes configurados com sucesso\" && exit 0"
   },
   "author": "Valdineia Cordeiro Reinaldo Silva",
   "license": "MIT"
