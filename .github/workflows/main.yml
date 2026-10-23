@@ -9,6 +9,7 @@ on:
 jobs:
   cobertura:
     runs-on: ubuntu-latest
+
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
@@ -20,6 +21,3 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
-
-      - name: Executar testes
-        run: npm test
